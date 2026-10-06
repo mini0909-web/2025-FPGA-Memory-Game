@@ -1,0 +1,42 @@
+# Local secrets and environment files
+.env
+.env.*
+!.env.example
+*.pem
+id_rsa
+id_ed25519
+
+# Local editor and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Python caches and environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+
+# Generated logs
+*.log
+*.cmd_log
+
+# Root-level ISE outputs; retain HDL, project and pin constraints
+/*
+!/.gitignore
+!/README*
+!/*.v
+!/*.xise
+!/*.ucf
+!/*.xdc
+!/ipcore_dir/
+
+# IP generation caches; retain PLL sources and regeneration settings
+/ipcore_dir/tmp/
+/ipcore_dir/_xmsgs/
+*.gise
